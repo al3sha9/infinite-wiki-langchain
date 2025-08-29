@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Infinite Wiki
 
-## Getting Started
+An AI-powered wiki where **every word is clickable** and generates new articles on-demand. Explore knowledge infinitely with each click opening new pathways to discovery.
 
-First, run the development server:
+## 🎯 Core Features
+
+- **Clickable Words**: Every word in articles is a hyperlink
+- **AI-Generated Content**: Powered by Gemini 2.5 Flash via LangChain
+- **Infinite Exploration**: Each article opens new topics to explore
+- **Modern UI**: Clean, responsive design with Tailwind CSS
+- **Real-time Generation**: Articles generated instantly on click
+
+## 🚀 Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Set up environment variables:**
+   Create `.env.local` with:
+   ```
+   GOOGLE_API_KEY=your_gemini_api_key_here
+   ```
+
+3. **Run the development server:**
+
+3. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Open [http://localhost:3000](http://localhost:3000)** and start exploring!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎮 How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Start** with the default "Knowledge" article
+2. **Click** any word in the article text
+3. **Watch** as a new AI-generated wiki page appears
+4. **Continue** exploring infinitely - every word opens new worlds!
 
-## Learn More
+## 🔧 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: Next.js 14 (App Router) + React + TypeScript
+- **Styling**: Tailwind CSS
+- **AI**: LangChain + Google Gemini 2.5 Flash
+- **Deployment**: Vercel (recommended)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── api/wiki/route.ts    # API endpoint for generating articles
+│   ├── layout.tsx           # Root layout
+│   └── page.tsx            # Home page
+├── components/
+│   ├── ClickableText.tsx    # Makes every word clickable
+│   ├── LoadingSpinner.tsx   # Loading indicator
+│   └── WikiPage.tsx        # Main wiki page component
+└── ...
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Ready to explore infinite knowledge? Click any word and start your journey! 🚀**
+# infinite-wiki-langchain
